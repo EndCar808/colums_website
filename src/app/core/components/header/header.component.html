@@ -7,6 +7,7 @@
     }"
   >
     <div class="header-span">
+      <!-- This is for the profile logo - makes it clickable and returns to homepage -->
       <a href="https://columcarroll.com/">
         <img
           ngSrc="/assets/logo.png"
@@ -18,7 +19,11 @@
           class="logo"
         />
       </a>
+      
+      <!-- This is the header navigation -->
       <app-navigation class="desktop-navbar"></app-navigation>
+
+      <!-- This is the toggle button for light mode and dark mode -->
       <app-mode-toggle class="mode-toggle"></app-mode-toggle>
     </div>
     <img
@@ -33,7 +38,9 @@
       tabindex="0"
     />
   </div>
+
 </header>
+
 @if (isMobileNavBarVisible()) {
 <app-navigation
   class="mobile-navbar"

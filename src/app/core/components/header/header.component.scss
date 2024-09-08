@@ -58,6 +58,20 @@
   cursor: pointer;
 }
 
+
+.logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%; /* This makes the image circular */
+  overflow: hidden; /* Ensures the image fits inside the circle */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth hover animation */
+
+  &:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add subtle shadow on hover */
+  }
+}
+
 @media (max-width: 800px) {
   .header-span {
     justify-content: space-between;
@@ -82,5 +96,6 @@
   .logo {
     height: 50px;
     width: 50px;
+    border-radius: 50%; /* Ensure circular shape for mobile as well */
   }
 }
