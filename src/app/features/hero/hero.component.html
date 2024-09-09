@@ -5,22 +5,27 @@
     </h1>
     <span class="name-holder">
       <!-- <h1 class="gradient t1 animate" [ngClass]="{ 'fade-up': isLoading() }"> -->
-      <h1 class="p1 animate" [ngClass]="{ 'fade-up': isLoading() }">
+      <h1 class="title animate" [ngClass]="{ 'fade-up': isLoading() }">
         Colum
       </h1>
-      <h1 class="p1 animate" [ngClass]="{ 'fade-up': isLoading() }">
+      <h1 class="title animate" [ngClass]="{ 'fade-up': isLoading() }">
         Carroll.
       </h1>
     </span>
     <p class="title-statement animate" [ngClass]="{ 'fade-up': isLoading() }">
-      I am a financial planner currently working at
-      <!-- <a href="https://www.slb.com" target="_blank">slb</a>. -->
+      I am an expert financial planner currently working at 
+      <a href="https://www.indigosca.com/" target="_blank">Indigo Financial Analysis</a>. 
+      My focus lies in helping you achieve your financial goals and secure your future.
     </p>
+
+    <!-- This is for the social media buttons -->
     <app-social-links
       class="social-media-links animate"
       [ngClass]="{ 'fade-up': isLoading() }"
     ></app-social-links>
   </div>
+
+  <!-- This is the image spec -->
   <div class="hero-image-holder animate" [ngClass]="{ 'fade-up': isLoading() }">
     <img
       ngSrc="/assets/hero_image.jpeg"

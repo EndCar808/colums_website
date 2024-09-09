@@ -86,13 +86,22 @@
 }
 
 .t1::before {
-  content: "Pravin";
+  content: "Colum";
   animation: gradient-background-1 8s infinite;
 }
 .t2::before {
-  content: "Mane.";
+  content: "Carroll.";
   animation: gradient-background-2 8s infinite;
 }
+
+
+.title {
+  font-size: 4rem; /* Make the font large (adjust as needed) */
+  font-weight: bold; /* Make the text bold */
+  color: #080624; /* Customize the color (blue in this example) */
+  margin: 0; /* Remove default margin on h1 elements */
+}
+
 
 @keyframes gradient-background-1 {
   40%,
