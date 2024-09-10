@@ -11,9 +11,9 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   public projects = [
     {
-      title: 'Ecom store',
+      title: 'Financial Planning',
       description:
-        'Ecom store front end implementation with homepage and cart feature.',
+        'Everything starts with your financial plan. Your plan incorporates everything to ensure you reach your goals. I work closely with you to create a tailored plan that aligns with your needs and adapts to your evolving financial situation, ensuring your long-term security and peace of mind.',
       techList: ['Angular', 'TypeScript', 'HTML', 'CSS'],
       github: 'https://github.com/pravinmane1/EcomStore',
       screenshot:

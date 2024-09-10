@@ -23,8 +23,8 @@ export class NavigationComponent implements OnInit {
   public isLoading = signal(true);
   public navOptions = signal([
     { href: '#about', title: 'About' },
-    { href: '#experience', title: 'Experience' },
-    { href: '#projects', title: 'Projects' },
+    // { href: '#experience', title: 'Experience' },
+    { href: '#projects', title: 'Services' },
     { href: '#contact', title: 'Contact' },
   ]);
 
