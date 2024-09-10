@@ -20,6 +20,29 @@ export class ProjectsComponent {
         'https://camo.githubusercontent.com/424f1e40887eefd32c4bc0b965ea78512f912247f70fd9c96a2ea54e81433659/68747470733a2f2f692e6962622e636f2f6733594b44367a2f53637265656e73686f742d323032342d30312d32362d3230313235302e706e67',
       live: 'https://ecomstore.pravinmane.com/',
     },
+
+    {
+      title: 'Retirement Planning',
+      description:
+        'Not just pensions, retirement planning involves preparing financially for life after work by setting goals, estimating future expenses, and creating strategies to save and invest. It helps ensure a comfortable and secure retirement by providing a clear roadmap to achieving financial independence in later years. Making sure that your future is protected, and you can live a comfortable retirement needs planning.',
+      techList: ['Angular', 'TypeScript', 'HTML', 'CSS'],
+      github: 'https://github.com/pravinmane1/EcomStore',
+      screenshot:
+        'https://camo.githubusercontent.com/424f1e40887eefd32c4bc0b965ea78512f912247f70fd9c96a2ea54e81433659/68747470733a2f2f692e6962622e636f2f6733594b44367a2f53637265656e73686f742d323032342d30312d32362d3230313235302e706e67',
+      live: 'https://ecomstore.pravinmane.com/',
+    },
+
+    {
+      title: 'Purpose-based Investments',
+      description:
+        'Investments involve allocating money into assets like stocks, bonds and/or real estate with the goal of generating returns over time. Purpose-based investments start with the end goal, ‘what is this money for?’ This process includes selecting suitable investment options based on your financial plan, your goals, need for growth, attitude to volatility, and capacity for loss. Effective investment strategies help grow wealth, diversify assets, and achieve both short-term and long-term financial objectives.',
+      techList: ['Angular', 'TypeScript', 'HTML', 'CSS'],
+      github: 'https://github.com/pravinmane1/EcomStore',
+      screenshot:
+        'https://camo.githubusercontent.com/424f1e40887eefd32c4bc0b965ea78512f912247f70fd9c96a2ea54e81433659/68747470733a2f2f692e6962622e636f2f6733594b44367a2f53637265656e73686f742d323032342d30312d32362d3230313235302e706e67',
+      live: 'https://ecomstore.pravinmane.com/',
+    },
+
     // {
     //   title: 'Simple Calculator',
     //   description:
