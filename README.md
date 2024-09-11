@@ -1,11 +1,11 @@
 # Personal Website
-<!-- 
-<h1 align="center">
-  Live URL - https://www.pravinmane.com
-</h1> -->
 
-<!-- ![image](https://github.com/user-attachments/assets/eca26b0e-79d9-41f1-a09a-edeb16e1f207) -->
+## To Do
 
+- Add in functionality for Calendly.
+- Finish getting the contact for setup.
+- Add in functionality for clicking to more detailed versions of the services.
+  
 ## 🛠 Installation & Set Up
 
 1. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)

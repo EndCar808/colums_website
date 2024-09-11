@@ -47,7 +47,7 @@ export class ContactComponent {
       const name = this.contactForm.value.name;
       const email = this.contactForm.value.email;
       const message = this.contactForm.value.message;
-      const url = `https://formspree.io/f/mzzpegwv`;
+      const url = `https://formspree.io/f/xgvwbeql`;
       this.isSending = true;
       this.httpClient
         .post(url, { name, email, message })
@@ -63,7 +63,7 @@ export class ContactComponent {
           if (res) {
             this.toasterService.toasterMessage$.next({
               message:
-                'Your message has been received successfully, I will try my best to respond as soon as possible',
+                'Message has been received successfully, I will try my best to respond as soon as possible',
               isSuccess: true,
             });
           } else {
