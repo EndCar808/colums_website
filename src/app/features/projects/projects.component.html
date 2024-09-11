@@ -2,26 +2,13 @@
   <h1 class="section-title">Services</h1>
   <div class="projects">
     @for (project of visibleProjects; track $index) {
-    <a class="project-card" [href]="project.live" target="_blank">
-      <!-- <div>
-        <img
-          [ngSrc]="project.screenshot"
-          alt="project screenshot"
-          height="100"
-          width="150"
-          class="project-img"
-        />
-      </div> -->
+    <!-- <a class="project-card" [href]="project.live" target="_blank">  You can use the href link here to link to an individual page for this service -->
+    <a class="project-card">
       <div class="project-info">
         <div class="project-title">{{ project.title }}</div>
         <div class="project-description">
           {{ project.description }}
         </div>
-        <!-- <ul role="list" class="tech-list">
-          @for (tech of project.techList; track $index) {
-          <li>{{ tech }}</li>
-          }
-        </ul> -->
       </div>
     </a>
     }
