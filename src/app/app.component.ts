@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { PortfolioComponent } from './core/components/portfolio/portfolio.component';
 import {
@@ -25,9 +25,15 @@ import { ToasterComponent } from './core/components/toaster/toaster.component';
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
-  constructor(private firebaseService: FirebaseConfigService) {}
+  constructor(
+    private firebaseService: FirebaseConfigService,
+    private renderer: Renderer2 // Inject Renderer2 for DOM manipulation
+    ) {}
 
   ngOnInit(): void {
     this.firebaseService.logEvent(ANALYTICS_EVENT_TYPE.SITE_OPENED);
+
+    // Add 'light' class to body by default
+    this.renderer.addClass(document.body, 'light');
   }
 }
