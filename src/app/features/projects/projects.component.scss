@@ -49,6 +49,28 @@
   transition: box-shadow 300ms ease-out;
 }
 
+// .extra-info {
+//   margin-top: 1rem; /* Adds space between description and extra info */
+//   padding: 1rem; /* Adds padding to the extra info section */
+//   background-color: #f9f9f9; /* Light background for contrast */
+//   border-left: 4px solid #0058f7; /* Adds a colored left border */
+//   border-radius: 0.5rem; /* Matches the existing card border-radius */
+//   font-size: 1rem; /* Ensure text is legible */
+//   color: #333; /* Standard dark text color */
+//   line-height: 1.5; /* Improves readability */
+//   transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition */
+//   opacity: 0; /* Initially hidden */
+//   max-height: 0; /* Initially collapsed */
+//   overflow: hidden; /* Ensures content doesn't overflow when collapsed */
+// }
+
+// .project-card.expanded .extra-info {
+//   max-height: 200px; /* Adjust based on the expected content size */
+//   opacity: 1; /* Make the content visible when expanded */
+// }
+
+
+
 .project-title {
   font-weight: 500;
   font-size: 1.25rem;

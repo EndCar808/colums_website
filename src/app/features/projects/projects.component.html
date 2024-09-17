@@ -2,25 +2,45 @@
   <h1 class="section-title">Services</h1>
   <div class="projects">
     @for (project of visibleProjects; track $index) {
-    <!-- <a class="project-card" [href]="project.live" target="_blank">  You can use the href link here to link to an individual page for this service -->
-    <a class="project-card">
+      <a class="project-card">
+        <div class="project-info">
+          <div class="project-title">{{ project.title }}</div>
+          <div class="project-description">
+            {{ project.description }}
+          </div>
+        </div>
+      </a>
+    }
+    </div>
+    @if (projects.length > visibleProjects.length) {
+      <div
+        class="more"
+        (click)="showMoreProjects()"
+        (keypress)="showMoreProjects()"
+        tabindex="0"
+      >
+        more...
+      </div>
+      }
+
+    <!-- <a class="project-card"  [ngClass]="{'expanded': expanded[i]}"  *ngFor="let project of visibleProjects; let i = index" (click)="toggleExtraInfo(i)">
       <div class="project-info">
         <div class="project-title">{{ project.title }}</div>
-        <div class="project-description">
-          {{ project.description }}
+        <div class="project-description">{{ project.description }}</div>
+        
+        <div *ngIf="expanded[i]" class="extra-info">
+          {{ project.extraInfo }}
         </div>
       </div>
     </a>
-    }
   </div>
-  @if (projects.length>visibleProjects.length) {
-  <div
+
+  <div *ngIf="projects.length > visibleProjects.length"
     class="more"
     (click)="showMoreProjects()"
     (keypress)="showMoreProjects()"
     tabindex="0"
   >
     more...
-  </div>
-  }
+  </div> -->
 </section>

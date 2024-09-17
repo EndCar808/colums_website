@@ -1,10 +1,10 @@
-import { NgOptimizedImage } from '@angular/common';
+import { NgOptimizedImage, CommonModule} from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, CommonModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })
@@ -14,6 +14,8 @@ export class ProjectsComponent {
       title: 'Financial Planning',
       description:
         'Everything starts with your financial plan. Your plan incorporates everything to ensure you reach your goals. I work closely with you to create a tailored plan that aligns with your needs and adapts to your evolving financial situation, ensuring your long-term security and peace of mind.',
+      extraInfo:
+      "Test Info."
     },
 
     {
@@ -133,8 +135,17 @@ export class ProjectsComponent {
     // },
   ];
 
-  public visibleProjects = this.projects.slice(0, 4);
+  // Array that tracks if project has been clicked on i.e., expanded
+  public expanded: boolean[] = this.projects.map(() => false);
+  // Function to toggle/expend for the extra information
+  toggleExtraInfo(index: number) {
+    this.expanded[index] = !this.expanded[index];
+  }
+  
 
+
+  // For displaying only 4 projects at a time and for showing more if button clicked
+  public visibleProjects = this.projects.slice(0, 4);
   showMoreProjects() {
     if (this.visibleProjects.length < this.projects.length) {
       this.visibleProjects = this.projects.slice(
