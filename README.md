@@ -2,8 +2,6 @@
 
 ## To Do
 
-- Add in functionality for Calendly.
-- Finish getting the contact for setup.
 - Add in functionality for clicking to more detailed versions of the services.
   
 ## 🛠 Installation & Set Up
